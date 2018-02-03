@@ -1,7 +1,7 @@
 from cudatext import *
 import string
 
-chars = string.ascii_letters + string.digits + '$_#'
+CHARS = string.ascii_letters + string.digits + '$_#'
 
 def get_word_info():
     x0, y0, x2, y2 = ed.get_carets()[0]
@@ -12,9 +12,15 @@ def get_word_info():
         x0 = len(text)
     
     x1 = x0
-    while x1>0 and text[x1-1] in chars: x1-=1
+    while x1>0 and text[x1-1] in CHARS: x1-=1
     x2 = x0
-    while x2<len(text) and text[x2] in chars: x2+=1
+    while x2<len(text) and text[x2] in CHARS: x2+=1
 
     return (x1, y0, x2-x1, text[x1:x2])
 
+
+def get_word():
+    inf = get_word_info()
+    if not inf: return ''
+    return inf[3]
+ 

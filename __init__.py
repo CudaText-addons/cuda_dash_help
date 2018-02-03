@@ -6,16 +6,10 @@ from cudatext import *
 from .word_proc import *
 from .dash_data import *
 
-def get_word():
-    inf = get_word_info()
-    if not inf: return ''
-    return inf[3]
-    
-
 class Command:
 
     def run_syntax_foreground(self):
-    
+   
         self._run(True, False)
 
     def run_nosyntax_foreground(self):
