@@ -2,7 +2,7 @@ plugin for CudaText.
 allows to call Dash help files (doc-sets) from CudaText. search is made from selected text, or current word if none is selected.
 
 for macOS, you must install Dash app.
-for Windows/Linux, install similar Zeal app, it uses Dash doc-sets too.
+for Windows/Linux, install similar Zeal app, it uses Dash doc-sets too. https://zealdocs.org/
 
 after installing, enable some doc-sets in Dash/Zeal options.
 not all syntaxes have doc-sets, but main popular syntaxes do.
