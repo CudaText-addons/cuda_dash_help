@@ -16,6 +16,6 @@ plugin gives commands for 2 main options:
 - run app in background or foreground
 
 
-author: Alexey (CudaText)
+author: Alexey Torgashin (CudaText)
 license: MIT
 used some code from Sublime Text plugin DashDoc.
